@@ -1,5 +1,5 @@
 # swiper-sample
-Swiperの動きのサンプル　　
+Swiperの動きのサンプル  
 バージョンは8を使用
 
 # デモ
