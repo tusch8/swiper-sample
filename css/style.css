@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/**
+ * swiper02
+ */
+.swiper02:not(.swiper-initialized) .swiper-button-pagination,
+.swiper02:not(.swiper-initialized) .swiper-button-prev,
+.swiper02:not(.swiper-initialized) .swiper-button-next {
+  display: none;
+}
+@media (min-width: 768px) {
+  .swiper02:not(.swiper-initialized) .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/**
+ * swiper03
+ */
+.swiper03:not(.swiper-initialized) .swiper-button-prev,
+.swiper03:not(.swiper-initialized) .swiper-button-next {
+  display: none;
+}
+@media (min-width: 768px) {
+  .swiper03:not(.swiper-initialized) .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/**
+ * swiper04
+ */
+.swiper04-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.swiper04-wrap .swiper {
+  width: calc(50% - 15px);
+}
+
+/**
+ * swiper05
+ */
+.swiper05-thumbs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.swiper05-thumbs .swiper-pagination-bullet {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.swiper05-thumbs .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/**
+ * swiper06
+ */
+.swiper06 .swiper-pagination-bullet {
+  margin: 0 10px !important;
+  background: transparent;
+}
+.swiper06 .swiper-pagination-bullet-active .path {
+  display: inline-block !important;
+  -webkit-animation: dash linear 60s;
+          animation: dash linear 60s;
+  -webkit-animation-iteration-count: unset;
+          animation-iteration-count: unset;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+.swiper06 .path {
+  display: none;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/**
+ * swiper07
+ */
+.swiper07 {
+  padding-bottom: 50px;
+}
+.swiper07 .swiper-slide {
+  width: 200px;
+  height: 200px;
+  background: #eee;
+}
+.swiper07 .swiper-slide.-small {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+}
+.swiper07 .swiper-scrollbar {
+  right: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 300px;
+  background: lightgray;
+}
+.swiper07 .swiper-scrollbar-drag {
+  background: black;
+}
+
+/**
+* レイアウトのための共通スタイル
+*/
+section {
+  max-width: 800px;
+  margin-bottom: 100px;
+}
+
+.swiper-slide {
+  display: grid;
+  place-items: center;
+  background: #eee;
+  aspect-ratio: 16/9;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}

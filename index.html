@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Swiper</title>
+
+	<!-- CDN読み込み -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/script.js" defer></script>
+</head>
+
+<body>
+	<h1>Swiper</h1>
+
+	<section>
+		<h2>基本</h2>
+		<div class="js-swiper01 swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+			</div>
+
+			<!-- ページャ -->
+			<div class="swiper-pagination"></div>
+
+			<!-- ナビボタン -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- スクロールバー -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+	</section>
+
+	<section>
+		<h2>SPのみスライド</h2>
+		<div class="js-swiper02 swiper swiper03">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+			</div>
+
+			<!-- ページャ -->
+			<div class="js-swiper02-pagination swiper-pagination"></div>
+
+			<!-- ナビボタン -->
+			<div class="js-swiper02-prev swiper-button-prev"></div>
+			<div class="js-swiper02-next swiper-button-next"></div>
+
+		</div>
+	</section>
+
+
+	<section>
+		<h2>SPは1枚、PCは3枚ずつスライド</h2>
+		<p>SPはスライドが1枚、PCはスライドが3枚以下のときスライドを止める</p>
+		<div class="js-swiper03 swiper swiper03">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+			</div>
+
+			<!-- ナビボタン -->
+			<div class="js-swiper03-prev swiper-button-prev"></div>
+			<div class="js-swiper03-next swiper-button-next"></div>
+
+		</div>
+	</section>
+
+	<section>
+		<h2>同じオプションのスライダーを別々に動かす</h2>
+
+		<div class="swiper04-wrap">
+			<div class="js-swiper04 swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+				</div>
+				<div class="js-swiper04-pagination swiper-pagination"></div>
+				<div class="js-swiper04-prev swiper-button-prev"></div>
+				<div class="js-swiper04-next swiper-button-next"></div>
+			</div>
+			<div class="js-swiper04 swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+				</div>
+				<div class="js-swiper04-pagination swiper-pagination"></div>
+				<div class="js-swiper04-prev swiper-button-prev"></div>
+				<div class="js-swiper04-next swiper-button-next"></div>
+			</div>
+			<div class="js-swiper04 swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+				</div>
+				<div class="js-swiper04-pagination swiper-pagination"></div>
+				<div class="js-swiper04-prev swiper-button-prev"></div>
+				<div class="js-swiper04-next swiper-button-next"></div>
+			</div>
+			<div class="js-swiper04 swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+				</div>
+				<div class="js-swiper04-pagination swiper-pagination"></div>
+				<div class="js-swiper04-prev swiper-button-prev"></div>
+				<div class="js-swiper04-next swiper-button-next"></div>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<h2>サムネイル付き</h2>
+		<p>サムネイルはスライドさせない</p>
+		<div class="js-swiper05 swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="./images/img01.jpg"></div>
+				<div class="swiper-slide"><img src="./images/img02.jpg"></div>
+				<div class="swiper-slide"><img src="./images/img03.jpg"></div>
+				<div class="swiper-slide"><img src="./images/img04.jpg"></div>
+				<div class="swiper-slide"><img src="./images/img05.jpg"></div>
+			</div>
+			<div class="js-swiper05-thumbs swiper05-thumbs"></div>
+		</div>
+	</section>
+
+	<section>
+		<h2>ローディングつきページャ</h2>
+		<div class="js-swiper06 swiper swiper06">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+			</div>
+			<div class="js-swiper06-pagination swiper-pagination"></div>
+		</div>
+	</section>
+
+	<section>
+		<h2>プログレスバーつきコンテンツスライダー</h2>
+		<div class="js-swiper07 swiper swiper07">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">コンテンツ</div>
+				<div class="swiper-slide">コンテンツ</div>
+				<div class="swiper-slide -small">コンテンツ<br>小さい</div>
+				<div class="swiper-slide">コンテンツ</div>
+				<div class="swiper-slide -small">コンテンツ<br>小さい</div>
+				<div class="swiper-slide -small">コンテンツ<br>小さい</div>
+				<div class="swiper-slide -small">コンテンツ<br>小さい</div>
+				<div class="swiper-slide">コンテンツ</div>
+				<div class="swiper-slide">コンテンツ</div>
+				<div class="swiper-slide">コンテンツ</div>
+				<div class="swiper-slide">コンテンツ</div>
+			</div>
+			<div class="js-swiper07-scrollbar swiper-scrollbar"></div>
+		</div>
+	</section>
+
+</body>
+
+</html>

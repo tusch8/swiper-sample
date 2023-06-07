@@ -1,0 +1,145 @@
+/**
+ * swiper02
+ */
+// スライダーが動いていないとき(ページャ消す＆PCのスタイル)
+.swiper02:not(.swiper-initialized) {
+	.swiper-button-pagination,
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		.swiper-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+	}
+}
+
+/**
+ * swiper03
+ */
+// スライダーが動いていないとき(ページャ消す＆PCのスタイル)
+.swiper03:not(.swiper-initialized) {
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		.swiper-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+	}
+}
+
+/**
+ * swiper04
+ */
+.swiper04-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	.swiper {
+		width: calc(50% - 30px * 1 / 2);
+	}
+}
+
+/**
+ * swiper05
+ */
+.swiper05-thumbs {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+	margin-top: 10px;
+	.swiper-pagination-bullet {
+		opacity: 0.5;
+		width: 100%; // widthとheightは必須
+		height: auto;
+		background: transparent; // 元のドットを見えなくする
+		transition: opacity 0.3s;
+		&.swiper-pagination-bullet-active {
+			opacity: 1; // アクティブのとき
+		}
+	}
+}
+
+/**
+ * swiper06
+ */
+.swiper06 {
+	.swiper-pagination-bullet {
+		margin: 0 10px !important;
+		background: transparent; // 元のドットを見えなくする
+	}
+	.swiper-pagination-bullet-active .path {
+		display: inline-block !important;
+		animation: dash linear 60s; // ドットの大きさやスライドの時間により調整
+		animation-iteration-count: unset;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 0;
+	}
+	.path {
+		display: none;
+	}
+}
+@keyframes dash {
+	from {
+		stroke-dashoffset: 1000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+/**
+ * swiper07
+ */
+.swiper07 {
+	padding-bottom: 50px;
+	.swiper-wrapper {
+	}
+	.swiper-slide {
+		width: 200px;
+		height: 200px;
+		background: #eee;
+		&.-small {
+			width: 150px;
+			height: 150px;
+			margin-top: 25px;
+		}
+	}
+	.swiper-scrollbar {
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+		background: lightgray;
+	}
+	.swiper-scrollbar-drag {
+		background: black;
+	}
+}
+
+/**
+* レイアウトのための共通スタイル
+*/
+section {
+	max-width: 800px;
+	margin-bottom: 100px;
+}
+
+.swiper-slide {
+	display: grid;
+	place-items: center;
+	background: #eee;
+	aspect-ratio: 16 / 9;
+}
+
+img {
+	width: 100%;
+	vertical-align: top;
+}
